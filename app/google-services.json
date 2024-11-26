@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "467086738375",
+    "project_id": "minor-it-sphere-app",
+    "storage_bucket": "minor-it-sphere-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:467086738375:android:31949c459a64878aac8fe2",
+        "android_client_info": {
+          "package_name": "com.example.minoritsphereapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArvpfie25TUh-mhWNvZ_PaPBnX8zgXJ0Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
