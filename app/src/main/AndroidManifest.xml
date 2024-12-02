@@ -4,8 +4,10 @@
 
     <!-- Internet permission for network access -->
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
+        android:name=".MyApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -28,6 +30,21 @@
 
         <activity android:name=".StudentPannel" />
         <activity android:name=".FacultyPannel" />
+
+        <activity android:name=".NotesActivity" />
+        <activity android:name=".AdminPannel" />
+        <activity android:name=".AboutDepartments" />
+        <activity android:name=".IseInfo" />
+        <activity android:name=".CseInfo" />
+        <activity android:name=".AimlInfo" />
+        <activity android:name=".PlacementPannel" />
+        <activity android:name=".PlacementStats" />
+        <activity android:name=".AddEvent" />
+        <activity android:name=".ViewEvents" />
+        <activity android:name=".AddPlacement" />
+        <activity android:name=".ViewPlacements" />
+
+
 
         <activity
             android:name=".MainActivity"

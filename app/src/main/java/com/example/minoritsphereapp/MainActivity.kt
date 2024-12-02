@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.minoritsphereapp.databinding.ActivityMainBinding
+import com.example.minoritsphereapp.databinding.AdminPannelBinding
 import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
@@ -49,5 +50,12 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
             finish() // Close MainActivity if the user is not authenticated
         }
+        //if the user is admin move him to the admin panel
+        if (firebaseAuth.currentUser?.email == "admin@gmail.com") {
+            val intent = Intent(this, AdminPannel::class.java) // Correct class name for activity
+            startActivity(intent)
+            finish() // Close MainActivity after redirecting to AdminPanel
+        }
+
     }
 }
