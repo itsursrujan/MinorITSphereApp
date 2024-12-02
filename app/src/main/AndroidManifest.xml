@@ -46,6 +46,10 @@
 
 
 
+        <activity android:name=".ProfilePannel" />
+
+
+
         <activity
             android:name=".MainActivity"
             android:exported="true" />

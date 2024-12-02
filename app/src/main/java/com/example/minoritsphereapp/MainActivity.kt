@@ -39,6 +39,12 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        //profile button
+        binding.profileBtn.setOnClickListener {
+            val intent = Intent(this, ProfilePannel::class.java)
+            startActivity(intent)
+        }
+
     }
 
     override fun onStart() {
