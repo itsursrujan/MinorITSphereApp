@@ -23,6 +23,13 @@ class FacultyPannel : AppCompatActivity() {
         }
 
 
+        //ACCESS ALL OPTIONS functionality
+        binding.accessAllOptions.setOnClickListener {
+            val intent = Intent(this, StudentPannel::class.java)
+            startActivity(intent)
+        }
+
+
         // Back button functionality
         binding.backButton.setOnClickListener {
             finish() // Close the current activity and return to the previous one
