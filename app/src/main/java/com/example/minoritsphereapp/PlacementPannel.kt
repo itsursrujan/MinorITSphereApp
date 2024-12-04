@@ -1,5 +1,6 @@
 package com.example.minoritsphereapp
 
+import com.example.minoritsphereapp.ViewPlacements
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

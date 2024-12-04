@@ -52,11 +52,16 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(libs.firebase.auth)
     implementation(libs.firebase.database)
+    implementation(libs.firebase.messaging)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-//delete from here
+//currect hai
     implementation("com.google.firebase:firebase-database-ktx:20.3.0")
+
+//delete from here
+//    implementation("com.google.firebase:firebase-messaging:24.4.1")
+
 
 
 }
