@@ -1,6 +1,7 @@
 package com.example.minoritsphereapp
 
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
@@ -25,5 +26,12 @@ class ProfilePannel : AppCompatActivity() {
         } else {
             emailTextView.text = "No user is currently logged in."
         }
+
+        // Find the back button and set up the listener
+        val backButton = findViewById<Button>(R.id.backBtn)  // Assuming it's a Button, change to ImageView if it's an icon
+        backButton.setOnClickListener {
+            finish() // Close the current activity and return to the previous one
+        }
+
     }
 }
