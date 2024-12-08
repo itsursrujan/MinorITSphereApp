@@ -39,5 +39,16 @@ class StudentPannel : AppCompatActivity() {
             val intent = Intent(this, ViewEvents::class.java)
             startActivity(intent)
         }
+
+        binding.chatBotButton.setOnClickListener {
+            val intent = Intent(this, ChatBotActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.quizBtn.setOnClickListener {
+            val intent = Intent(this, QuizPannel::class.java)
+            startActivity(intent)
+        }
+
     }
 }
