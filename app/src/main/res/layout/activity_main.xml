@@ -82,3 +82,108 @@
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+<!-----------------------------changed with new UI---------------->
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6FF"
+    tools:context=".MainActivity">
+
+    <!-- Sign-Out Button -->
+
+
+    <!-- signout Button -->
+
+    <!-- profile Button -->
+
+
+    <!-- Student Button -->
+
+    <!-- Faculty Button -->
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="170dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="108dp"
+        android:text="Choose Your Role"
+        android:textColor="@color/black"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signOutButton" />
+
+    <Button
+        android:id="@+id/signOutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Sign Out"
+        android:textSize="13sp"
+        app:cornerRadius="12sp"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/profileBtn"
+        android:layout_width="114dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:text="Profile"
+        android:textSize="13sp"
+        app:cornerRadius="12sp"
+        app:icon="@drawable/profile"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/facultyBtn"
+        android:layout_width="240dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="88dp"
+        android:padding="20sp"
+        android:shadowColor="#000000"
+        android:text="FACULTY"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:cornerRadius="12sp"
+        app:icon="@drawable/faculty"
+        app:iconSize="39sp"
+        app:iconTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/studentBtn"
+        android:layout_width="240dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="20dp"
+        android:padding="20sp"
+        android:text="STUDENT"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:cornerRadius="12sp"
+        app:icon="@drawable/student"
+        app:iconSize="39dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/facultyBtn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+<!----------------------------------------------------------------------->
