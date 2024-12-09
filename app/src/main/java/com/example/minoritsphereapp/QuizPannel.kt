@@ -2,6 +2,7 @@ package com.example.minoritsphereapp
 
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.firebase.database.FirebaseDatabase
@@ -30,7 +31,7 @@ class QuizPannel : AppCompatActivity() {
 
     private fun getDataFromFirebase() {
         binding.progressBar.visibility = View.VISIBLE
-        FirebaseDatabase.getInstance().reference
+        FirebaseDatabase.getInstance().reference.child("quiz")
             .get()
             .addOnSuccessListener { dataSnapshot ->
                 if (dataSnapshot.exists()) {
@@ -42,6 +43,9 @@ class QuizPannel : AppCompatActivity() {
                     }
                 }
                 setupRecyclerView()
+            }
+            .addOnFailureListener {
+                Toast.makeText(this, "Error fetching data", Toast.LENGTH_SHORT).show()
             }
     }
 }
